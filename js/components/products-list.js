@@ -42,6 +42,7 @@ const itemList = {
         const listItem = dom.querySelector('li');
 
         listItem.addEventListener('click', function() {
+            
             itemList.onSelect(item);
         });
 
