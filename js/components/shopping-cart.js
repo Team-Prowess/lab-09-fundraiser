@@ -4,7 +4,7 @@ function makeItem(item) {
     return html`
         <li>${item.name} <strong>(${item.quantity})</strong></li>
     `;
-};
+}
 
 const list = document.getElementById('cart-list');
 
