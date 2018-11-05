@@ -6,7 +6,7 @@ import shoppingCart from './shopping-cart.js';
 const products = productsApi.getAll();
 const cart = cartApi.get();
 
-shoppingCart.init(cart);
+const shoppingCart = new ShoppingCart(cart, items);
 
 productList.init(products, null,
     // ...??  function(product) {
