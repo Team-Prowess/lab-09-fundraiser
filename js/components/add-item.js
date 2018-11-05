@@ -18,6 +18,12 @@ const addItem = {
                 item: elements.item.value,
                 description: elements.description.value,
                 price: elements.price.value
+
+                // Marty added parse to price
+                // image: elements.image.value,
+                // item: elements.item.value,
+                // description: elements.description.value,
+                // price: parseInt(elements.price.value)
             };
 
             onAdd(listItems);
