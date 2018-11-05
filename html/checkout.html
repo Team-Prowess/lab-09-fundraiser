@@ -25,28 +25,67 @@
         <form id="shipping-info">
             <fieldset>
                 <legend>Shipping Information</legend>
-                <p> Name 
+                <div> 
+                    <label for="shipping">Name</label>
                     <input required type="text" name="name" id="name">
-                </p>
-                <p>Address
+                </div>
+                <div>
+                    Address
                     <input required type="text" max=75 name="address" id="address">
-                </p>
-                <p>Apartment #
+                </div>
+                <div>Apartment #
                     <input type="text" name="apartment-number" id="apartment-number">
-                </p>
-                <p>City
+                </div>
+                <div>
+                    <label for="city">City</label>
                     <input required type="text" name="city" id="city">
-                    State
+
+                    <label for="state">State</label>
                     <input required type="text" name="state" id="state">
-                    Zip code
+
+                    <label for="zipcode">Zip code</label>
                     <input required type="number" min length=5 max length=5 name="zipcode" id="zipecode">
-                </p>
-                <p>Contact number
+                </div>
+                <div>
+                    <label for="phone-number">Contact number</label>
                     <input required type="tel" name="phone" id="phone">
-                </p>
+                </div>
+                
+                <div>
+                    <label for="billing">Check if billing address is the same</label>  
+                    <input type="checkbox" name="billing" id="billing">
+                </div>
             </fieldset>
-            <button type="submit" name="submit-order" id="submit-order">Submit Order</button>
         </form>
+        <form id="billing-info">
+
+            <fieldset class="hidden">
+                <legend>Billing Information</legend>
+                <div>
+                    <label for="billing-name">Name</label>
+                    <input type="text" name="billing-name" id="billing-name">
+                </div>
+                <div>
+                    <label for="billing-address">Address</label>
+                    <input for="billing-address" name="billing-address" id="billing-address">
+                </div>
+                <div>
+                    <label for="billing-second-address">Apartment #</label>
+                    <input type="text" name="apartment-number" id="apartment-number">
+                </div>
+                <div>
+                    <label for="city">City</label>
+                    <input required type="text" name="city" id="city">
+                    
+                    <label for="state">State</label>
+                    <input required type="text" name="state" id="state">
+                    
+                    <label for="zipcode">Zip code</label>
+                    <input required type="number" min length=5 max length=5 name="zipcode" id="zipecode">
+                </div>
+            </fieldset>
+        </form>
+            <button type="submit" name="submit-order" id="submit-order">Submit Order</button>
     </main>
     
 </body>
