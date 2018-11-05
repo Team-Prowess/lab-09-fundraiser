@@ -14,15 +14,15 @@ const cartApi = {
     },
 
     add(item) {
-        const orderItem = cart.find(item => {
-            return item.name === item.name;
+        const orderItem = cart.find(product => {
+            return product.name === item.name;
         });
         if(orderItem) {
             orderItem.quantity++;
         }
         else {
             cart.push({
-                name:item.name,
+                name: item.name,
                 quantity: 1
             });
         }

@@ -15,7 +15,7 @@ function makeItem(item) {
             <br> 
             <button class="danger">Remove</button>   
         </li>
-                `;
+             `;
                 
     const template = document.createElement('template');
     template.innerHTML = html;
