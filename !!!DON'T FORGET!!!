@@ -1,0 +1,40 @@
+Delete this before uploading.
+
+need README.md
+
+from lab instructions:
+
+Main data is array of orders. Each order has products array 
+and customer object:
+[
+    {
+        customer: {
+            // customer data
+        },
+        products: [
+            {
+                name: <id>
+                quantity: 2
+            }
+        ]
+    }
+]
+Products are own data, look something like:
+[
+    {
+        id: 'coconut',
+        name: 'Coconut Cookies',
+        description: 'Delicious thing to eat',
+        price: 3.50,
+        image: 'image.png'
+    }
+]
+
+Rubric
+    xxLanding Page 2pts
+    xxOrder Page 3pts
+Checkout Page 4pts
+    xxProduct Page 3pts
+Order Report Page 4pts
+  xData Management 2pts
+  xProject organization, clean code 2pt
