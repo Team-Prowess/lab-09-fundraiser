@@ -56,37 +56,41 @@
                     <input type="checkbox" name="billing" id="billing">
                 </div>
             </fieldset>
-        </form>
-        <form id="billing-info">
+            <fieldset id="billing-info">
+                <div class="hidden">
+                    <div>
+                        <label for="billing-name">Name</label>
+                        <input type="text" name="billing-name" id="billing-name">
+                    </div>    
 
-            <fieldset class="hidden">
-                <legend>Billing Information</legend>
-                <div>
-                    <label for="billing-name">Name</label>
-                    <input type="text" name="billing-name" id="billing-name">
-                </div>
-                <div>
-                    <label for="billing-address">Address</label>
-                    <input for="billing-address" name="billing-address" id="billing-address">
-                </div>
-                <div>
-                    <label for="billing-second-address">Apartment #</label>
-                    <input type="text" name="apartment-number" id="apartment-number">
-                </div>
-                <div>
-                    <label for="city">City</label>
-                    <input required type="text" name="city" id="city">
+                    <div>
+                        <label for="billing-address">Address</label>
+                        <input for="billing-address" name="billing-address" id="billing-address">
+                    </div>
+
+                     <div>
+                         <label for="billing-second-address">Apartment #</label>
+                         <input type="text" name="apartment-number" id="apartment-number">
+                    </div>   
+
+                    <div>
+                        <label for="city">City</label>
+                        <input required type="text" name="city" id="city">
+                    </div>
                     
-                    <label for="state">State</label>
-                    <input required type="text" name="state" id="state">
+                    <div>
+                        <label for="state">State</label>
+                        <input required type="text" name="state" id="state">
+                    </div>
                     
-                    <label for="zipcode">Zip code</label>
-                    <input required type="number" min length=5 max length=5 name="zipcode" id="zipecode">
+                    <div>
+                        <label for="zipcode">Zip code</label>
+                        <input required type="number" min length=5 max length=5 name="zipcode" id="zipecode">
+                    </div>
                 </div>
-            </fieldset>
-        </form>
+                </form>
+            </main>
             <button type="submit" name="submit-order" id="submit-order">Submit Order</button>
-    </main>
     
 </body>
 </html>
