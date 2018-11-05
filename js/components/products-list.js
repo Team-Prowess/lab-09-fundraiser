@@ -1,7 +1,8 @@
 
 function makeItem(item) {
     const html = /*html*/`
-        <li>
+        
+    <li>
             <img src="../../assets/${item.image ? item.image : 'Cari-tronFrisbee.jpg'}">
             <h3> 
                 ${item.name}
@@ -14,8 +15,7 @@ function makeItem(item) {
 
             <br> 
             <button class="danger">Remove</button>   
-        </li>
-                `;
+        </li>`;
                 
     const template = document.createElement('template');
     template.innerHTML = html;
@@ -24,9 +24,7 @@ function makeItem(item) {
 
 const list = document.getElementById('items');
 
-const itemList = {
-
-    
+const itemList = {  
     init(items, onSelect) {
         for(let i = 0; i < items.length; i++) {
             itemList.add(items[i]);

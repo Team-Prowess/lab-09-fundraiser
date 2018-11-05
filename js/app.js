@@ -5,9 +5,8 @@ import itemsApi from './components/products-api.js';
 const items = itemsApi.getAll();
 
 itemList.init(items, /*onSelect*/ function(item) {
-    const index = itemsApi.remove(item);
-    itemList.remove(index);
-
+    const index = itemsApi.add(item);
+    itemList.add(index);
 });
 
 addItem.init(function(item) {

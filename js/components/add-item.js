@@ -1,21 +1,24 @@
-const form = document.getElementById('products-form');
+// const form = document.getElementById('products-form');
 const image = document.getElementById('image');
-const name = document.getElementById('name');
+const item = document.getElementById('item');
 const description = document.getElementById('description');
 const price = document.getElementById('price');
 
 const addItem = {
     init(onAdd) {
+        const form = document.getElementById('add-form');
         form.addEventListener('submit', function(event) {
             event.preventDefault();
 
-            const listItems = {};
+            const elements = form.elements;
+
+            const listItems = {
             
-            listItems.image = image.value;
-            listItems.name = name.value;
-            listItems.description = description.value;
-            listItems.price = price.value;
-            
+                image: elements.image.value,
+                item: elements.item.value,
+                description: elements.description.value,
+                price: elements.price.value
+            };
 
             onAdd(listItems);
 

@@ -19,16 +19,6 @@ and customer object:
         ]
     }
 ]
-Products are own data, look something like:
-[
-    {
-        id: 'coconut',
-        name: 'Coconut Cookies',
-        description: 'Delicious thing to eat',
-        price: 3.50,
-        image: 'image.png'
-    }
-]
 
 Rubric
     xxLanding Page 2pts
