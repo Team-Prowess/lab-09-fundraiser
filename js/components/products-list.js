@@ -15,7 +15,7 @@ function makeItem(item) {
             <br> 
             <button class="danger">Remove</button>   
         </li>
-                `;
+             `;
                 
     const template = document.createElement('template');
     template.innerHTML = html;
@@ -27,12 +27,14 @@ const list = document.getElementById('items');
 const itemList = {
 
     
-    init(items, onSelect) {
+    init(items, onIncrement, onDecrement) {
         for(let i = 0; i < items.length; i++) {
             itemList.add(items[i]);
         }
-        itemList.onSelect = onSelect;
+        
         itemList.items = items;
+        itemList.onIncrement = onIncrement;
+        itemList.onDecrment = onDecrement;
     },
     
     add(item) {
@@ -42,7 +44,12 @@ const itemList = {
         const listItem = dom.querySelector('li');
 
         listItem.addEventListener('click', function() {
-            itemList.onSelect(item);
+            itemList.onIncrement(item);
+        });
+
+        const buttonRemove = dom.querySelector('button');
+        buttonRemove.addEventListener('click', function() {
+            itemList.onDecrement(item);
         });
 
         list.appendChild(dom);

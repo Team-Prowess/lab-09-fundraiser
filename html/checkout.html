@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="order.html">Order</a>
+            <a href="admin-products.html">Add Items</a>
+        </nav>
+    </header>
+
+    <main>
+        <form id="final-cart">
+            <fieldset>
+                <legend>Shopping Cart</legend>
+            </fieldset>
+        </form>
+        
+        <form id="shipping-info">
+            <fieldset>
+                <legend>Shipping Information</legend>
+                <div> 
+                    <label for="shipping">Name</label>
+                    <input required type="text" name="name" id="name">
+                </div>
+                <div>
+                    Address
+                    <input required type="text" max=75 name="address" id="address">
+                </div>
+                <div>Apartment #
+                    <input type="text" name="apartment-number" id="apartment-number">
+                </div>
+                <div>
+                    <label for="city">City</label>
+                    <input required type="text" name="city" id="city">
+
+                    <label for="state">State</label>
+                    <input required type="text" name="state" id="state">
+
+                    <label for="zipcode">Zip code</label>
+                    <input required type="number" min length=5 max length=5 name="zipcode" id="zipecode">
+                </div>
+                <div>
+                    <label for="phone-number">Contact number</label>
+                    <input required type="tel" name="phone" id="phone">
+                </div>
+                
+                <div>
+                    <label for="billing">Check if billing address is the same</label>  
+                    <input type="checkbox" name="billing" id="billing">
+                </div>
+            </fieldset>
+            <fieldset id="billing-info">
+                <legend>Billing Information</legend>
+                <div class="hidden">
+                    <div>
+                        <label for="billing-name">Name</label>
+                        <input type="text" name="billing-name" id="billing-name">
+                    </div>    
+
+                    <div>
+                        <label for="billing-address">Address</label>
+                        <input for="billing-address" name="billing-address" id="billing-address">
+                    </div>
+
+                     <div>
+                         <label for="billing-second-address">Apartment #</label>
+                         <input type="text" name="apartment-number" id="apartment-number">
+                    </div>   
+
+                    <div>
+                        <label for="city">City</label>
+                        <input required type="text" name="city" id="city">
+                    </div>
+                    
+                    <div>
+                        <label for="state">State</label>
+                        <input required type="text" name="state" id="state">
+                    </div>
+                    
+                    <div>
+                        <label for="zipcode">Zip code</label>
+                        <input required type="number" min length=5 max length=5 name="zipcode" id="zipecode">
+                    </div>
+                </div>
+                </form>
+            </main>
+            <button type="submit" name="submit-order" id="submit-order">Submit Order</button>
+    
+</body>
+</html>
