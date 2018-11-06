@@ -1,75 +1,75 @@
 let items = [
     {
         image: '../assets/1939Ensemble.jpg',
-        item: '1939 Ensemble, Cymbal',
-        Description: 'Mersey Beat 18" Crash/Ride Cymbal & Gong from Revival Drum Shop, donated by 1939 Ensemble',
-        Price: '400'
+        name: '1939 Ensemble, Cymbal',
+        description: 'Mersey Beat 18" Crash/Ride Cymbal & Gong from Revival Drum Shop, donated by 1939 Ensemble',
+        price: '400'
     },
     {
         image: '../assets/tronFrisbee.jpg',
-        item: 'Cari Pizza, Tron Frisbee',
-        Description: 'Tron Frisbee autographed by Cari Palazzolo',
-        Price: '45'
+        name: 'Cari Pizza, Tron Frisbee',
+        description: 'Tron Frisbee autographed by Cari Palazzolo',
+        price: '45'
     },
     {
         image: '../assets/DrugTruck.jpg',
-        item: 'Drug Truck, Free Drum Lesson',
-        Description: 'One drum lesson with Drug Trucks Dave Coniglio',
-        Price: '150'
+        name: 'Drug Truck, Free Drum Lesson',
+        description: 'One drum lesson with Drug Trucks Dave Coniglio',
+        price: '150'
     },
     {
         image: '../assets/Genders.jpg',
-        item: 'Genders, T-Shirt',
-        Description: 'Romulus and Remus Tee from Genders',
-        Price: '40'
+        name: 'Genders, T-Shirt',
+        description: 'Romulus and Remus Tee from Genders',
+        price: '40'
     },
     {
         image: '../assets/Gaythiest.jpg',
-        item: 'Gaytheist, Split LP',
-        Description: 'Gaythiest + Rabbits 12" vinyl split LP, Gay*Bits, autographed by Jason Rivera',
-        Price: '75'
+        name: 'Gaytheist, Split LP',
+        description: 'Gaythiest + Rabbits 12" vinyl split LP, Gay*Bits, autographed by Jason Rivera',
+        price: '75'
     },
     {
         image: '../assets/HaleyHendrickx.jpg',
-        item: 'Haley Hendrickx, I Need to Start a Garden CD',
-        Description: 'Haley Hendrickx album, "I Need to Start a Garden" on CD',
-        Price: '30'
+        name: 'Haley Hendrickx, I Need to Start a Garden CD',
+        description: 'Haley Hendrickx album, "I Need to Start a Garden" on CD',
+        price: '30'
     },
     {
         image: '../assets/Cari.jpg',
-        item: 'Houndstooth, Autographed Poster',
-        Description: '2015 UK "End Of The Road Festival" poster signed by members of Houndstooth',
-        Price: '135'
+        name: 'Houndstooth, Autographed Poster',
+        description: '2015 UK "End Of The Road Festival" poster signed by members of Houndstooth',
+        price: '135'
     },
     {
         image: '../assets/RedFang.jpg',
-        item: 'Red Fang, Beer Koozie',
-        Description: 'Red Fang Beer Koozie',
-        Price: '35'
+        name: 'Red Fang, Beer Koozie',
+        description: 'Red Fang Beer Koozie',
+        price: '35'
     },
     {
         image: '../assets/SadDad.jpg',
-        item: 'Sad Dad, Stickers',
-        Description: 'Stickers from Sad Dad',
-        Price: '20'
+        name: 'Sad Dad, Stickers',
+        description: 'Stickers from Sad Dad',
+        price: '20'
     },
     {
         image: '../assets/sleep.jpg',
-        item: 'Sleep, Patch Jacket',
-        Description: 'Denim Patch Jacket donated by Sleep',
-        Price: '125'
+        name: 'Sleep, Patch Jacket',
+        description: 'Denim Patch Jacket donated by Sleep',
+        price: '125'
     },
     {
         image: '../assets/SummerCannibals.jpg',
-        item: 'Summer Cannibals, Bandana',
-        Description: 'Summer Cannibals Turkey Skull Bandana',
-        Price: '25'
+        name: 'Summer Cannibals, Bandana',
+        description: 'Summer Cannibals Turkey Skull Bandana',
+        price: '25'
     },
     {
         image: '../assets/torgazi.jpg',
-        item: 'Torgazi, Enamel Pin Set',
-        Description: 'Enamel Pin Set from Torgazi',
-        Price: '50'
+        name: 'Torgazi, Enamel Pin Set',
+        description: 'Enamel Pin Set from Torgazi',
+        price: '50'
     },
 ];
 
