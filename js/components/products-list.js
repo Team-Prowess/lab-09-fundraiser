@@ -5,8 +5,8 @@ function makeItem(item) {
     const html = /*html*/`
         
         <li>
-        // <h3
-            <img src="../../assets/${item.image ? item.image : 'Cari-tronFrisbee.jpg'}">
+            <h3
+                <img src="../../assets/${item.image ? item.image : '1939Ensemble.jpg'}">
             <h3> 
                 ${item.name}
             </h3>  
@@ -15,11 +15,18 @@ function makeItem(item) {
             </h4>    
                 ${item.price}
             </h4>  
-            <div class"order
-
-            <br> 
-            // <button class="danger">Remove</button>   
+        <div class"order
         </li>
+        
+        // item: '1939 Ensemble, Cymbal',
+        // Description: 'Mersey Beat 18" Crash/Ride Cymbal & Gong from Revival Drum Shop, donated by 1939 Ensemble',
+        // Price: '400'
+        //     'Cari-tronFrisbee.jpg'}">
+            
+
+        //     <br> 
+            // <button class="danger">Remove</button>   
+        
             `;
                 
     const template = document.createElement('template');
@@ -30,14 +37,14 @@ function makeItem(item) {
 const list = document.getElementById('items');
 
 const itemList = {  
-    init(items, onSelect) {
+        // init(items, onSelect) {
         // onOrder should wire up the option buttons 
         // from Marty's 11-5 lecture, need 2 lines of communication, one for add and 
         // another for remove - below instead of above
-        // itemList.items = items;
-        // itemList.onSelect = onSelect;
-        // itemList.onRemove = onRemove;
-        for(let i = 0; i < items.length; i++) {
+        itemList.items = items;
+        itemList.onSelect = onSelect;
+        itemList.onRemove = onRemove;
+    for(let i = 0; i < items.length; i++) {
             itemList.add(items[i]);
         }
         itemList.onSelect = onSelect;
