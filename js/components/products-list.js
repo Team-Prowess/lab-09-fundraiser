@@ -13,7 +13,7 @@ function makeItem(item) {
             </h4>  
 
             <br> 
-            <button class="danger">Remove</button>   
+            <button id="${item.id}">Remove</button>   
         </li>
              `;
                 
@@ -34,11 +34,12 @@ const itemList = {
         
         itemList.items = items;
         itemList.onIncrement = onIncrement;
-        itemList.onDecrment = onDecrement;
+        itemList.onDecrement = onDecrement;
     },
     
     add(item) {
         const dom = makeItem(item);
+        
        
         // const removeButton = dom.querySelector('button');
         const listItem = dom.querySelector('li');
@@ -48,15 +49,16 @@ const itemList = {
         });
 
         const buttonRemove = dom.querySelector('button');
-        buttonRemove.addEventListener('click', function() {
+        buttonRemove.addEventListener('click', function(event) {
+            event.stopPropagation();
             itemList.onDecrement(item);
         });
 
         list.appendChild(dom);
     },
-    remove(index) {
-        list.querySelectorAll('li')[index].remove();
-    }
+    // remove(index) {
+    //     list.querySelectorAll('li')[index].remove();
+    // }
 };
 
 export default itemList;
