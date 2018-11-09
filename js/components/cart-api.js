@@ -37,9 +37,7 @@ const cartApi = {
         });
         if(orderItem) {
             orderItem.quantity--;
-            console.log(orderItem.quantity);
             if(orderItem.quantity === 0) {
-                console.log(index, cart);
                 const index = cart.findIndex(product => {
                     return product.name === item.name;
                 });

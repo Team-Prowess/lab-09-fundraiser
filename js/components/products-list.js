@@ -1,4 +1,4 @@
-// Marty added import html...
+import html from './html.js'
 
 
 function makeItem(item) {
@@ -15,18 +15,7 @@ function makeItem(item) {
             </h4>    
                 ${item.price}
             </h4>  
-        <div class"order
-        </li>
-        
-        // item: '1939 Ensemble, Cymbal',
-        // Description: 'Mersey Beat 18" Crash/Ride Cymbal & Gong from Revival Drum Shop, donated by 1939 Ensemble',
-        // Price: '400'
-        //     'Cari-tronFrisbee.jpg'}">
-            
-
-        //     <br> 
-            // <button class="danger">Remove</button>   
-        
+       
             `;
                 
     const template = document.createElement('template');
